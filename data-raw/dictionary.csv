@@ -1,0 +1,35 @@
+directory,file_name,variable_name,variable_type,description
+data/,dowaodf.rda,survey_date,character,Date the household survey was completed
+data/,dowaodf.rda,district,character,Name of the district where the household is located
+data/,dowaodf.rda,gvh,character,Name of the Group Village Headman (GVH) area
+data/,dowaodf.rda,health_facility,character,Name of the nearest or associated health facility
+data/,dowaodf.rda,sanitation_observed,character,Whether a sanitation facility was observed at the household
+data/,dowaodf.rda,sanitation_type,character,"Type of sanitation facility observed (e.g., pit latrine, flush toilet)"
+data/,dowaodf.rda,pit_cover_or_seal,character,Whether the facility has a pit cover or water seal to block flies
+data/,dowaodf.rda,sanitation_near_water,character,Whether the sanitation facility is located within 30m of a water point
+data/,dowaodf.rda,sanitation_distance,character,Approximate distance of the facility from the household
+data/,dowaodf.rda,has_privacy,character,Whether the sanitation facility offers visual privacy
+data/,dowaodf.rda,has_security,character,Whether the sanitation facility provides physical security
+data/,dowaodf.rda,has_roof,character,Whether the facility has a roof to prevent rain entry
+data/,dowaodf.rda,shared_sanitation,character,Whether the sanitation facility is shared with other households
+data/,dowaodf.rda,child_faeces_disposal,character,"How faeces of children are disposed of (e.g., in toilet, open area)"
+data/,dowaodf.rda,child_faeces_disposal_other,character,"If other disposal method is used, specify it"
+data/,dowaodf.rda,usual_defecation_place,character,Where household members usually defecate
+data/,dowaodf.rda,faeces_seen_in_village,character,Whether respondent observed faeces in the village in the past 6 months
+data/,dowaodf.rda,faeces_around_house,character,Whether faeces were observed around the household at the time of visit
+data/,dowaodf.rda,handwash_near_sanitation,character,Whether a handwashing facility is within 10 paces of the sanitation facility
+data/,dowaodf.rda,handwash_has_water,character,Whether the handwashing facility has water available
+data/,dowaodf.rda,handwash_has_soap,character,Whether soap is available at the handwashing station
+data/,dowaodf.rda,handwash_in_use,character,Whether there is evidence that the handwashing station is being used
+data/,dowaodf.rda,mhm_materials_used,character,Menstrual hygiene materials used by women in the household
+data/,dowaodf.rda,mhm_cleaned,character,Whether reusable menstrual materials are cleaned
+data/,dowaodf.rda,mhm_cleaning_method,character,"How menstrual materials are cleaned (e.g., water and soap)"
+data/,dowaodf.rda,mhm_drying_method,character,"How menstrual materials are dried (e.g., sun, inside room)"
+data/,dowaodf.rda,mhm_disposal_place,character,Where menstrual materials are disposed of
+data/,dowaodf.rda,has_bathroom,character,Whether the household has a designated bathroom facility
+data/,dowaodf.rda,bathing_has_water,character,Whether sufficient water is available for bathing
+data/,dowaodf.rda,bathing_water_source,character,"Source of water used for bathing (e.g., borehole, unprotected spring)"
+data/,dowaodf.rda,bathroom_has_soap,character,Whether soap is available at the bathroom facility
+data/,dowaodf.rda,bathroom_in_use,character,Whether there is evidence that the bathroom facility is being used
+data/,dowaodf.rda,bathroom_has_privacy,character,Whether the bathroom offers visual privacy
+data/,dowaodf.rda,bathroom_has_security,character,Whether the bathroom provides physical security
