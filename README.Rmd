@@ -1,0 +1,203 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# ODF Sanitation and Hygiene Household Survey – Ntchisi & Dowa District 2019
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+This dataset was collected as part of the Open Defecation Free (ODF)
+Verification Exercise conducted in 2019 across selected Traditional
+Authorities (TAs) in Dowa and Ntchisi districts in Malawi. The data was
+gathered using the mWater platform under the coordination of BASEflow, a
+Malawian NGO focused on strengthening sustainable access to water,
+sanitation, and hygiene (WASH).
+
+The dataset includes household-level observations on sanitation facility
+types, hygiene practices, and menstrual hygiene management (MHM). It
+captures the availability, usage, and quality of latrines, handwashing
+facilities, and bathing areas—along with behavioral indicators like
+privacy, safety, and waste disposal practices. The goal was to assess
+whether communities met the conditions for ODF certification.
+
+**Potential Use Cases**
+
+This dataset may be useful for:
+
+1.  WASH Practitioners and NGOs To monitor sanitation coverage, identify
+    behavior change needs, and design targeted interventions in rural
+    settings.
+
+2.  Government Agencies and District Councils As evidence for validating
+    ODF status, planning sanitation improvements, and aligning with
+    national sanitation strategies.
+
+3.  Researchers and Public Health Experts To study sanitation behavior,
+    infrastructure gaps, and their impact on community health and
+    hygiene.
+
+4.  Development Partners and Donors To track progress towards SDG 6
+    (Clean Water and Sanitation), evaluate past investments, and guide
+    future funding priorities.
+
+5.  Advocacy and Communication Specialists To develop localized
+    messaging and campaigns promoting sustained use of improved
+    sanitation and hygiene practices.
+
+## Installation
+
+You can install the development version of dowaodfsurvey from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/dowaodfsurvey")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+1.  Click Download CSV. A window opens that displays the CSV in your
+    browser.
+2.  Right-click anywhere inside the window and select "Save Page As...".
+3.  Save the file in a folder of your choice.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/dowaodfsurvey/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to Open Defecation Free (ODF) Verification Exercise survey data conducted in 2019 across selected Traditional Authorities (TAs) in Dowa and Ntchisi districts in Malawi
+
+```{r}
+library(dowaodfsurvey)
+```
+
+### dowaodf
+
+The dataset `dowaodf`  has `r nrow(dowaodf)` observations and `r ncol(dowaodf)`
+variables
+
+```{r}
+dowaodf |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "dowaodf.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+## Example Visualization
+
+```{r}
+library(dowaodfsurvey)
+
+# Visualization: Sanitation vs Proximity to Water (Grouped Bar Chart)
+# Purpose: Important for understanding contamination risk and public health safety.
+# Load necessary libraries
+library(ggplot2)
+library(dplyr)
+library(readr)
+
+# Step 1: Load your package
+library(dowaodfsurvey)
+
+# Step 2: Clean and prepare data
+data_clean <- dowaodf %>%
+  filter(
+    !is.na(sanitation_type),
+    sanitation_type != "No toilet", sanitation_type != "NA"
+  ) %>%
+  mutate(
+    sanitation_type = as.factor(sanitation_type),
+    sanitation_near_water = as.factor(sanitation_near_water)
+  )
+
+# Step 3: Group and count data
+summary_data <- data_clean %>%
+  group_by(sanitation_type, sanitation_near_water) %>%
+  summarise(count = n(), .groups = "drop")
+
+# Step 4: Plot grouped bar chart
+ggplot(summary_data, aes(x = sanitation_type, y = count, fill = sanitation_near_water)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(
+    title = "Sanitation Type vs Proximity to Water Source",
+    x = "Sanitation Type",
+    y = "Number of Facilities",
+    fill = "Sanitation Near Water"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+```
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("dowaodfsurvey")
+```

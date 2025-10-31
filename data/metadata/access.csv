@@ -1,0 +1,3 @@
+fileName,name,contentUrl,encodingFormat
+dowaodf.csv,dowaodf,https://raw.githubusercontent.com/openwashdata/dowaodf/main/inst/extdata/dowaodf.csv,csv
+dowaodf.xlsx,dowaodf,https://raw.githubusercontent.com/openwashdata/dowaodf/main/inst/extdata/dowaodf.xlsx,ooxml

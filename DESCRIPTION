@@ -1,11 +1,29 @@
 Package: dowaodfsurvey
-Title: What the Package Does (One Line, Title Case)
+Title: ODF Sanitation and Hygiene Household Survey – Ntchisi & Dowa District 2019
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Authors@R: c(
+    person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-3197-6244")),
+    person("Chisomo", "Fatch", role = "ctb"),
+    person("Rebecca", "Hara", role = "ctb"),
+    person("Samuel", "Nguluwe", role = "ctb"),
+    person("Florence", "Longwe", role = "ctb"),
+    person("Ulemu", "Phiri", role = "ctb"),
+    person("Rex", "Habu", role = "ctb"),
+    person("Gift", "Mkandawire", role = "ctb"),
+    person("Flossy", "Kamoto", role = "ctb"),
+    person("Gladwell", "Jarafi", role = "ctb")
+  )
+Description: This dataset contains results from a household-level WASH (Water, Sanitation, and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management (MHM) as part of an Open Defecation Free (ODF) verification exercise.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Language: en-GB
+Config/Needs/website: rmarkdown
+Date: 2025-08-07
+URL: https://github.com/openwashdata/dowaodfsurvey
+BugReports: https://github.com/openwashdata/dowaodfsurvey/issues

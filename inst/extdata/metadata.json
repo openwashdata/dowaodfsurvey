@@ -1,0 +1,36 @@
+{
+  "@context": "https://openwashdata.org/",
+  "@type": "Dataset",
+  "name": "dowaodf",
+  "description": "This dataset contains results from a household-level WASH (Water, Sanitation, and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management (MHM) as part of an Open Defecation Free (ODF) verification exercise.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "openwashdata @ Global Health Engineering, ETH Zurich",
+    "url": "https://openwashdata.org/"
+  },
+  "datePublished": "2025-08-07",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "keywords": null,
+  "distribution": {
+    "@type": "DataDownload",
+    "url": "https://raw.githubusercontent.com/openwashdata/dowaodf/main/inst/extdata/dowaodf.csv",
+    "contentUrl": "https://raw.githubusercontent.com/openwashdata/dowaodf/main/inst/extdata/dowaodf.csv",
+    "encodingFormat": "text/csv"
+  },
+  "encodingFormat": "CSV",
+  "version": "1.0",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": null
+  },
+  "temporalCoverage": {
+    "@type": "DateTime",
+    "startDate": null,
+    "endDate": null
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Emmanuel Mhango",
+    "email": "emmanuellmhango@gmail.com"
+  }
+}
