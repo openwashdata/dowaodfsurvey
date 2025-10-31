@@ -187,7 +187,6 @@ ggplot(summary_data, aes(x = sanitation_type, y = count, fill = sanitation_near_
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
-
 ```
 
 ## License
