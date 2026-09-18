@@ -8,6 +8,8 @@
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
+[![R-CMD-check](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17492107.svg)](https://zenodo.org/doi/10.5281/zenodo.17492107)
 <!-- badges: end -->
 
 This dataset was collected as part of the Open Defecation Free (ODF)
@@ -102,7 +104,7 @@ dowaodf |>
   gt::as_raw_html()
 ```
 
-<div id="bfpeovcdic" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="wxbghfreoc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -246,8 +248,7 @@ dowaodf |>
 <td headers="bathroom_has_privacy" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Yes</td>
 <td headers="bathroom_has_security" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">No</td></tr>
   </tbody>
-  &#10;  
-</table>
+  &#10;</table>
 </div>
 
 For an overview of the variable names, see the following table.
@@ -978,7 +979,7 @@ ggplot(summary_data, aes(x = sanitation_type, y = count, fill = sanitation_near_
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" alt="" width="100%" style="display: block; margin: auto;" />
 
 ## License
 
@@ -993,17 +994,21 @@ Please cite this package using:
 citation("dowaodfsurvey")
 #> To cite package 'dowaodfsurvey' in publications use:
 #> 
-#>   Mhango E (2025). _dowaodfsurvey: ODF Sanitation and Hygiene Household
-#>   Survey – Ntchisi & Dowa District 2019_. R package version 0.0.0.9000,
+#>   Mhango E (2026). "dowaodfsurvey: ODF Household Survey, Ntchisi and
+#>   Dowa Districts, Malawi 2019." doi:10.5281/zenodo.17492107
+#>   <https://doi.org/10.5281/zenodo.17492107>.
 #>   <https://github.com/openwashdata/dowaodfsurvey>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
-#>     title = {dowaodfsurvey: ODF Sanitation and Hygiene Household Survey – Ntchisi & Dowa District 2019},
+#>   @Misc{mhango:2026,
+#>     title = {dowaodfsurvey: ODF Household Survey, Ntchisi and Dowa Districts, Malawi 2019},
 #>     author = {Emmanuel Mhango},
-#>     year = {2025},
-#>     note = {R package version 0.0.0.9000},
+#>     year = {2026},
+#>     doi = {10.5281/zenodo.17492107},
 #>     url = {https://github.com/openwashdata/dowaodfsurvey},
+#>     abstract = {This dataset contains results from a household-level WASH (Water, Sanitation, and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management (MHM) as part of an Open Defecation Free (ODF) verification exercise.},
+#>     keywords = {open data,washdata,sanitation,hygiene,open defecation free,household survey,Malawi,open-defecation,wash},
+#>     version = {0.0.0.9000},
 #>   }
 ```
