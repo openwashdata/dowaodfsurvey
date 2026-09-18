@@ -1,0 +1,14 @@
+
+bibentry(bibtype = "Misc",
+         key = "mhango:2026",
+         title = "dowaodfsurvey: ODF Household Survey, Ntchisi and Dowa Districts, Malawi 2019",
+         author = person(given = "Emmanuel",
+                         family = "Mhango",
+                         email = "emmanuellmhango@gmail.com",
+                         comment = c(ORCID = "0000-0003-3197-6244")),
+         year = "2026",
+         doi = "10.5281/zenodo.17492107",
+         url = "https://github.com/openwashdata/dowaodfsurvey",
+         abstract = "This dataset contains results from a household-level WASH (Water, Sanitation, and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management (MHM) as part of an Open Defecation Free (ODF) verification exercise.",
+         keywords = "open data,washdata,sanitation,hygiene,open defecation free,household survey,Malawi,open-defecation,wash",
+         version = "0.0.0.9000")

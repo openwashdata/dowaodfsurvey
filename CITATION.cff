@@ -1,0 +1,41 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "dowaodfsurvey" in publications use:'
+type: dataset
+license: CC-BY-4.0
+title: 'dowaodfsurvey: ODF Household Survey, Ntchisi and Dowa Districts, Malawi 2019'
+version: 0.0.0.9000
+doi: 10.5281/zenodo.17492107
+abstract: This dataset contains results from a household-level WASH (Water, Sanitation,
+  and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within
+  the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was
+  to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management
+  (MHM) as part of an Open Defecation Free (ODF) verification exercise.
+authors:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+repository-code: https://github.com/openwashdata/dowaodfsurvey
+url: https://github.com/openwashdata/dowaodfsurvey
+date-released: '2026-09-18'
+contact:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+keywords:
+- open data
+- washdata
+- sanitation
+- hygiene
+- open defecation free
+- household survey
+- Malawi
+- open-defecation
+- wash
+
