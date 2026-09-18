@@ -8,7 +8,7 @@ message: 'To cite package "dowaodfsurvey" in publications use:'
 type: dataset
 license: CC-BY-4.0
 title: 'dowaodfsurvey: ODF Household Survey, Ntchisi and Dowa Districts, Malawi 2019'
-version: 0.0.0.9000
+version: 1.0.1
 doi: 10.5281/zenodo.17492107
 abstract: This dataset contains results from a household-level WASH (Water, Sanitation,
   and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within
