@@ -24,6 +24,8 @@ knitr::opts_chunk$set(
 
 # ODF Sanitation and Hygiene Household Survey – Ntchisi & Dowa District 2019
 
+[![DOI](https://zenodo.org/badge/1033787201.svg)](https://doi.org/10.5281/zenodo.17492107)
+
 <!-- badges: start -->
 
 [![License: CC BY
