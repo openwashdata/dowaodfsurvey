@@ -24,13 +24,15 @@ knitr::opts_chunk$set(
 
 # ODF Sanitation and Hygiene Household Survey – Ntchisi & Dowa District 2019
 
+[![DOI](https://zenodo.org/badge/1033787201.svg)](https://doi.org/10.5281/zenodo.17492107)
+
 <!-- badges: start -->
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-[![DOI](https://zenodo.org/badge/1033787201.svg)](https://doi.org/10.5281/zenodo.17492107)
-
+[![R-CMD-check](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17492107.svg)](https://zenodo.org/doi/10.5281/zenodo.17492107)
 <!-- badges: end -->
 
 This dataset was collected as part of the Open Defecation Free (ODF)
