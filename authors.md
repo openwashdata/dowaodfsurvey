@@ -26,7 +26,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/openwashdata/dowaodfsurvey/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/openwashdata/dowaodfsurvey/blob/v1.0.1/inst/CITATION)
 
 Mhango E (2026). “dowaodfsurvey: ODF Household Survey, Ntchisi and Dowa
 Districts, Malawi 2019.”
