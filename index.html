@@ -20,7 +20,7 @@
   "name": "ODF Household Survey, Ntchisi and Dowa Districts, Malawi 2019",
   "alternateName": "dowaodfsurvey",
   "description": "This dataset contains results from a household-level WASH (Water, Sanitation, and Hygiene) survey conducted on July 1st, 2019 in Mduku GVH, Dowa District, within the catchment area of Mbingwa Health Centre, Malawi. The purpose of the survey was to assess sanitation infrastructure, hygiene practices, and menstrual hygiene management (MHM) as part of an Open Defecation Free (ODF) verification exercise.",
-  "version": "0.0.0.9000",
+  "version": "1.0.1",
   "url": "https://github.com/openwashdata/dowaodfsurvey",
   "sameAs": "https://doi.org/10.5281/zenodo.17492107",
   "identifier": "10.5281/zenodo.17492107",
@@ -48,7 +48,12 @@
   "publisher": {
     "@type": "Organization",
     "name": "openwashdata",
-    "url": "https://github.com/openwashdata"
+    "url": "https://openwashdata.org"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "openwashdata",
+    "url": "https://openwashdata.org/pages/gallery/data/"
   },
   "variableMeasured": [
     {
@@ -263,6 +268,7 @@
 <li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="search.json">
 </form></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://openwashdata.org" aria-label="openwashdata website">openwashdata.org</a></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/openwashdata/dowaodfsurvey/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
       </ul>
 </div>
@@ -278,6 +284,7 @@
 <!-- badges: start -->
 
 <p><a href="https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a> <a href="https://zenodo.org/doi/10.5281/zenodo.17492107" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17492107.svg" alt="DOI"></a> <!-- badges: end --></p>
+<p>A data package published by <a href="https://openwashdata.org" class="external-link">openwashdata</a>.</p>
 <p>This dataset was collected as part of the Open Defecation Free (ODF) Verification Exercise conducted in 2019 across selected Traditional Authorities (TAs) in Dowa and Ntchisi districts in Malawi. The data was gathered using the mWater platform under the coordination of BASEflow, a Malawian NGO focused on strengthening sustainable access to water, sanitation, and hygiene (WASH).</p>
 <p>The dataset includes household-level observations on sanitation facility types, hygiene practices, and menstrual hygiene management (MHM). It captures the availability, usage, and quality of latrines, handwashing facilities, and bathing areas—along with behavioral indicators like privacy, safety, and waste disposal practices. The goal was to assess whether communities met the conditions for ODF certification.</p>
 <p><strong>Potential Use Cases</strong></p>
@@ -1277,16 +1284,23 @@ Whether the bathroom provides physical security
 </ul>
 </div>
 
+<div class="openwashdata">
+<h2 data-toc-skip>openwashdata</h2>
+<ul class="list-unstyled">
+<li><p>This package is part of <a href="https://openwashdata.org" class="external-link">openwashdata</a>. Browse the <a href="https://openwashdata.org/pages/gallery/data/" class="external-link">data catalogue</a> or get the <a href="https://openwashdata.org/pages/newsletter/" class="external-link">newsletter</a>.</p></li>
+</ul>
+</div>
+
   </aside>
 </div>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Crafted by Emmanuel Mhango.</p>
+  <p>Crafted by Emmanuel Mhango. Published by <a href="https://openwashdata.org" class="external-link">openwashdata</a>, a project of <a href="https://ghe.ethz.ch/" class="external-link">Global Health Engineering</a> at ETH Zurich.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
+  <p>Package built with <a href="https://openwashdata.github.io/washr/" class="external-link">washr</a> 1.2.1. Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>
