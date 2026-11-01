@@ -5,8 +5,6 @@
 [![R-CMD-check](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/dowaodfsurvey/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17492107.svg)](https://zenodo.org/doi/10.5281/zenodo.17492107)
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 This dataset was collected as part of the Open Defecation Free (ODF)
 Verification Exercise conducted in 2019 across selected Traditional
 Authorities (TAs) in Dowa and Ntchisi districts in Malawi. The data was
@@ -201,6 +199,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
